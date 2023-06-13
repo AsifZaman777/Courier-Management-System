@@ -2,6 +2,7 @@
 using Courier_Management_System.Models;
 using Courier_Management_System.Models.Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Courier_Management_System.Controllers
 {
@@ -42,5 +43,16 @@ namespace Courier_Management_System.Controllers
             return RedirectToAction("Add");
 
         }
+
+        [HttpGet]
+        public async Task<IActionResult> ShipmentList()
+        {
+            var shipments= await courierDbContext.Shipments.ToListAsync();
+            return View(shipments);
+        }
+
+
+ 
+
     }
 }
