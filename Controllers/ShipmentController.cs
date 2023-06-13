@@ -99,5 +99,22 @@ namespace Courier_Management_System.Controllers
             return RedirectToAction("ShipmentList");
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Delete(UpdateShipmentViewModel model)
+        {
+            var shipmentInfo = await courierDbContext.Shipments.FindAsync(model.Id);
+
+            if(shipmentInfo != null)
+            {
+                courierDbContext.Shipments.Remove(shipmentInfo);
+                await courierDbContext.SaveChangesAsync();
+
+                return RedirectToAction("ShipmentList");
+            }
+            return RedirectToAction("ShipmentList");
+        }
+
+
+
     }
 }
