@@ -10,8 +10,8 @@
     <hr />
 </div>
 
-<form>
-    <div mehtod="post" action="Add">
+<form mehtod="post" action="Add">
+
         <div class="col">
             <label for="labelShipperName">Shipper Name</label>
             <input type="text" class="form-control" asp-for="ShipperName" placeholder="Rakibul Islam">
@@ -31,9 +31,8 @@
 
             <label for="labelShipmentStatus">Shipment Status</label>
             <input type="text" class="form-control" asp-for="ShipmentStatus" placeholder="Dlivered">
-
+            <br />
+            <button type="submit" class="btn btn-primary">Add New Shipment</button>
         </div>
-    </div>
-    <br />
-    <button type="submit" class="btn btn-primary">Add New Shipment</button>
+  
 </form>
