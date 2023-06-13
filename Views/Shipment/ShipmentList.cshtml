@@ -1,0 +1,41 @@
+﻿@model List<Courier_Management_System.Models.Domain.Shipment>
+
+
+@{
+}
+
+<h1>Shipment Information</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Consignment ID</th>
+            <th>Shipper Name</th>
+            <th>Shipper Address</th>
+            <th>Shipper Email</th>
+            <th>Receiver Name</th>
+            <th>Receiver Address</th>
+            <th>Receiver Email</th>
+            <th>Shipment Status</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var shipmentItem in Model)
+        {
+            <tr>
+                <td>@shipmentItem.Id</td>
+                <td>@shipmentItem.ShipperName</td>
+                <td>@shipmentItem.ShipperAddress</td>
+                <td>@shipmentItem.ShipperEmail</td>
+                <td>@shipmentItem.ReceiverName</td>
+                <td>@shipmentItem.ReceiverAddress</td>
+                <td>@shipmentItem.ReceiverEmail</td>
+                <td>@shipmentItem.ShipmentStatus</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
