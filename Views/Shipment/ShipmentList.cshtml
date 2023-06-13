@@ -33,7 +33,11 @@
                 <td>@shipmentItem.ReceiverAddress</td>
                 <td>@shipmentItem.ReceiverEmail</td>
                 <td>@shipmentItem.ShipmentStatus</td>
-                <td><a href="/Shipment/View/@shipmentItem.Id">View</a></td>
+                <td>
+                   <button class="btn btn-warning">
+                        <a href="/Shipment/View/@shipmentItem.Id" style="text-decoration:none;color:black">View</a>
+                   </button>  
+               </td>
             </tr>
         }
     </tbody>
