@@ -150,6 +150,7 @@ namespace Courier_Management_System.Controllers
         [HttpGet]
         public async Task<IActionResult> SearchShipment(Guid Id)
         {
+          
             var shipment = await courierDbContext.Shipments.FirstOrDefaultAsync(x => x.Id == Id);
 
             if (shipment == null)
@@ -157,7 +158,7 @@ namespace Courier_Management_System.Controllers
                 return NotFound();
             }
 
-            var shipments = new List<Shipment> { shipment }; // Create a list with the single shipment
+            var shipments = new List<Shipment> { shipment }; 
 
             return View(shipments);
         }
