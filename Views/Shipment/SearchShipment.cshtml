@@ -1,9 +1,10 @@
-﻿@model List<Courier_Management_System.Models.Domain.Shipment>
+﻿
+@model List<Courier_Management_System.Models.Domain.Shipment>
 
 @{
 }
 
-<h1>Shipment Information</h1>
+<h1>Searhed Shipment by Consignment Id</h1>
 
 <table class="table">
     <thead>
@@ -32,11 +33,6 @@
                 <td>@shipmentItem.ReceiverAddress</td>
                 <td>@shipmentItem.ReceiverEmail</td>
                 <td>@shipmentItem.ShipmentStatus</td>
-                <td>
-                   <button class="btn btn-warning">
-                        <a href="/Shipment/View/@shipmentItem.Id" style="text-decoration:none;color:black">View</a>
-                   </button>  
-               </td>
             </tr>
         }
     </tbody>
@@ -45,17 +41,5 @@
 </table>
 
 <div>
-    <button class="btn btn-primary"><a href="/" style="text-decoration:none;color:whitesmoke">Back To Admin Panel</a></button>
+    <button class="btn btn-primary"><a href="/Shipment/ShipmentList" style="text-decoration:none;color:whitesmoke">Back to Shipment List</a></button>
 </div>
-
-<br />
-<br />
-
-<form asp-controller="Shipment" asp-action="SearchShipment" method="get">
-    <div class="form-group">
-        <label for="shipmentId">Consignment ID</label>
-        <input type="text" class="form-control" id="shipmentId" name="id" placeholder="6362a480-c915-4d38-a246-ce30697a81f1">
-    </div>
-    <br />
-    <button type="submit" class="btn btn-primary">Search</button>
-</form>
