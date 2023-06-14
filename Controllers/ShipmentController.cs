@@ -116,5 +116,37 @@ namespace Courier_Management_System.Controllers
 
 
 
+        [HttpGet]
+        public IActionResult CustomerDetails()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CustomerDetails(AddShipmentViewModel customerAddShipmentRequest)
+        {
+            var shipment = new Shipment()
+            {
+                Id = Guid.NewGuid(),
+                ShipperName = customerAddShipmentRequest.ShipperName,
+                ShipperAddress = customerAddShipmentRequest.ShipperAddress,
+                ShipperEmail = customerAddShipmentRequest.ShipperEmail,
+
+                ReceiverName = customerAddShipmentRequest.ReceiverName,
+                ReceiverAddress = customerAddShipmentRequest.ReceiverAddress,
+                ReceiverEmail = customerAddShipmentRequest.ReceiverEmail,
+
+                ShipmentStatus = customerAddShipmentRequest.ShipmentStatus,
+
+            };
+
+            await courierDbContext.Shipments.AddAsync(shipment);
+            await courierDbContext.SaveChangesAsync();
+            return RedirectToAction("ShipmentList");
+        }
+
+
+
+
     }
 }
