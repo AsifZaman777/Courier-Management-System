@@ -142,7 +142,7 @@ namespace Courier_Management_System.Controllers
 
             await courierDbContext.Shipments.AddAsync(shipment);
             await courierDbContext.SaveChangesAsync();
-            return RedirectToAction("ShipmentList");
+            return RedirectToAction("OrderConfirmation", "Home");
         }
 
 

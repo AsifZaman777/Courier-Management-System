@@ -40,7 +40,7 @@
                 <td>@shipmentItem.ShipmentStatus</td>
                 <td>
                    <button class="btn btn-warning">
-                        <a href="/Shipment/View/@shipmentItem.Id" style="text-decoration:none;color:black">View</a>
+                        <a href="/Shipment/View/@shipmentItem.Id" style="text-decoration:none;color:black">Manage</a>
                    </button>  
                </td>
             </tr>
@@ -51,7 +51,7 @@
 </table>
 
 <div>
-    <button class="btn btn-primary"><a href="/" style="text-decoration:none;color:whitesmoke">Back To Admin Panel</a></button>
+    <button class="btn btn-primary"><a asp-controller="Home" asp-action="Index" style="text-decoration:none;color:whitesmoke">Back To Admin Panel</a></button>
 </div>
 
 <br />

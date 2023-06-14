@@ -3,7 +3,7 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Customer Panel</h1>
+    <h1 class="display-4">Courier Delivery Panel</h1>
     <small style="opacity:0.6">Courier Management System [Developed by piistech]</small>
     <hr />
 </div>
@@ -31,6 +31,7 @@
         <input type="text" class="form-control" asp-for="ShipmentStatus" placeholder="Dispatch">
         <br />
         <button type="submit" class="btn btn-primary">Confirm pickup</button>
+        <a asp-action="CustomerPanel" asp-controller="Home" class="btn btn-primary">Back to Customer panel</a>
     </div>
 </form>
 
