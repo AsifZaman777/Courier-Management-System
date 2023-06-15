@@ -1,0 +1,47 @@
+﻿@model List<Courier_Management_System.Models.Domain.Admin>
+
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Shipment Management Panel</h1>
+    <small style="opacity:0.6">Courier Management System [Developed by piistech]</small>
+    <hr />
+</div>
+
+<h1>Admins Information</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Admin Name</th>
+            <th>Admin Password</th>
+            <th>Admin Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var adminItem in Model)
+        {
+            <tr>
+                <td>@adminItem.AdminName</td>
+                <td>@adminItem.AdminPassword</td>
+                <td>@adminItem.AdminEmail</td>
+                <td>
+                    <button class="btn btn-danger">
+                        <a asp-action="DeleteAdmin" asp-controller="Admin" asp-route-adminEmail="@adminItem.AdminEmail" style="text-decoration:none;color:black">Delete</a>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<div>
+    <button class="btn btn-primary"><a asp-controller="Home" asp-action="Index" style="text-decoration:none;color:whitesmoke">Back To Admin Panel</a></button>
+</div>
+
+<br />
+<br />

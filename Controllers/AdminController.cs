@@ -37,6 +37,28 @@ namespace Courier_Management_System.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> AdminsList()
+        {
+            var adminsList = await courierDbContext.Admins.ToListAsync();
+            return View(adminsList);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> DeleteAdmin(AddAdminModel adminLoginModel)
+        {
+            var admin = await courierDbContext.Admins.FirstOrDefaultAsync(a => a.AdminEmail == adminLoginModel.AdminEmail);
+
+            if (admin != null)
+            {
+                courierDbContext.Admins.Remove(admin);
+                await courierDbContext.SaveChangesAsync();
+                return RedirectToAction("AdminsList");
+            }
+
+            return RedirectToAction("AdminsList");
+        }
+
+        [HttpGet]
         public IActionResult Login()
         {
             return View();

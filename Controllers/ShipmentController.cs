@@ -77,6 +77,7 @@ namespace Courier_Management_System.Controllers
             return RedirectToAction("ShipmentList");
         }
 
+
         [HttpPost]
         public async Task<IActionResult> View(UpdateShipmentViewModel model)
         {
