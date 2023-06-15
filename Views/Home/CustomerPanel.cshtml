@@ -9,8 +9,6 @@
 </div>
 
 <div style="display:grid; gap:20px">
-    <button type="button" class="btn btn-primary btn-lg"><a class="nav-link text-white" asp-area="" asp-controller="Shipment" asp-action="CustomerDetails">Deliver your parcel</a></button>
-    <button type="button" class="btn btn-primary btn-lg"><a class="nav-link text-white" href="#">Track your parcel</a></button>
+    <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Shipment" asp-action="CustomerDetails">Deliver your parcel</a>
+     <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Home" asp-action="TrackParcel">Track your parcel</a>
 </div>
-
-

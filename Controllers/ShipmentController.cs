@@ -163,6 +163,23 @@ namespace Courier_Management_System.Controllers
             return View(shipments);
         }
 
+        public async Task<IActionResult> SearchShipmentCustomer(Guid Id)
+        {
+
+            var shipment = await courierDbContext.Shipments.FirstOrDefaultAsync(x => x.Id == Id);
+
+            if (shipment == null)
+            {
+                return NotFound();
+            }
+
+            var shipments = new List<Shipment> { shipment };
+
+            return View(shipments);
+        }
+
+
+
 
     }
 }

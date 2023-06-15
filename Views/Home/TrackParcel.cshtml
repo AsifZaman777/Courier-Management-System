@@ -1,0 +1,21 @@
+﻿
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Courier Tracking Info</h1>
+    <small style="opacity:0.6">Courier Management System [Developed by piistech]</small>
+    <hr />
+</div>
+
+<form asp-controller="Shipment" asp-action="SearchShipmentCustomer" method="get">
+    <div class="form-group">
+        <label for="shipmentId">Consignment ID <small>[Enter your delivery consignment number]</small> </label>
+        <input type="text" class="form-control" id="shipmentId" name="id" placeholder="6362a480-c915-4d38-a246-ce30697a81f1">
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+
+
