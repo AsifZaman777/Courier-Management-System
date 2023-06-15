@@ -10,5 +10,6 @@ namespace Courier_Management_System.Data
 
         }
         public DbSet<Shipment> Shipments { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 }

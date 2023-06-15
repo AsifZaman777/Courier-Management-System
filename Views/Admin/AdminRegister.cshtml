@@ -1,0 +1,31 @@
+﻿
+@{
+}
+
+<div class="text-center">
+    <h1 class="display-4">Admin Registration</h1>
+    <small style="opacity:0.6">Courier Management System [Developed by piistech]</small>
+    <hr />
+</div>
+
+@model Courier_Management_System.Models.AddAdminModel
+
+<h2>Register Admin</h2>
+
+<form asp-controller="Admin" asp-action="AdminRegister" method="post">
+    <div class="form-group">
+        <label for="adminEmail">Email</label>
+        <input type="email" class="form-control" asp-for="AdminEmail" id="adminEmail" name="AdminEmail" required>
+    </div>
+    <div class="form-group">
+        <label for="adminPassword">Password</label>
+        <input type="password" class="form-control" asp-for="AdminName" id="adminPassword" name="AdminPassword" required>
+    </div>
+    <div class="form-group">
+        <label for="adminName">Name</label>
+        <input type="text" class="form-control" asp-for="AdminName" id="adminName" name="AdminName" required>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Register</button>
+    <button class="btn btn-primary"><a asp-controller="Home" asp-action="Index" style="text-decoration:none;color:whitesmoke">Back To Admin Panel</a></button>
+</form>
