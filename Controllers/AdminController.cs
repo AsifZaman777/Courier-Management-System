@@ -33,7 +33,7 @@ namespace Courier_Management_System.Controllers
                await courierDbContext.Admins.AddAsync(admin);
                await courierDbContext.SaveChangesAsync();
 
-                return RedirectToAction("AdminRegConfirmation", "Home");
+                return RedirectToAction("AdminsList");
         }
 
         [HttpGet]
