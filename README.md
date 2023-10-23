@@ -34,8 +34,15 @@
 <img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/ad3a3c74-ba0d-4852-91e9-6f349619089e">
 <p>Admin Login panel</p>
 </div>
+<b>Customer handling: Admins can add some customers to ship a parcel</b>
+<br><br>
+<div align="center">
+<img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/225b334e-16dc-485b-9ce6-01c9304b7db1">
+<p>Customers handling panel</p>
+</div>
 <br>
-<b>Customer and Shipment handling: Admins can change the shipment, products and customers state</b>
+<br>
+<b>Shipment handling: Admins can change the shipment, products and customers state</b>
 <br><br>
 <div align="center">
 <img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/6e05c5f3-cfce-4aaf-b16b-e9c08924c407">
@@ -49,13 +56,7 @@
 <p>Admin reg panel</p>
 </div>
 <br>
-<b>Officials handling: Admins can handle all the officials accessibilities</b>
-<br><br>
-<div align="center">
-<img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/225b334e-16dc-485b-9ce6-01c9304b7db1">
-<p>Admin edit panel</p>
-</div>
-<br>
+
 
 
 
