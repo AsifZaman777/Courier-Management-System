@@ -4,7 +4,7 @@
 ## Project Description: 
 
 <h3>Customer Panel</h3>
-- Dashboard: The first section where the users will land on.
+<b>Dashboard: The first section where the users will land on.</b>
 <br><br>
 <div align="center">
 <img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/b07f3b9a-6fde-422a-8bf7-fa9b2de85e56">
