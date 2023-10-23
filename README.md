@@ -14,12 +14,22 @@
 - Customer order placement: Customer can request for a pickup from his own residance and can dispatch the product easily. Meanwhile the customer will be registered and no need to be registered if the customer just want to roam around. A consignment number will be genereted to track the product.
 <br>
 <div align="center">
-<img  src="https://drive.google.com/file/d/1AUfgFd44Z2GQ83S_9JKevhITHIj7WrGO/view?usp=share_link">
-<p>Dashboard</p>
+<img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/c22e8066-8879-4b8b-b454-24adf5ab88d6">
+<p>Customer parcel delivery panel</p>
 </div>
 <br>
+<b>Customer order tracking: The generated consignment number can help customers to track the parcel</b>
+<br>
+<div align="center">
+<img  src="https://github.com/AsifZaman777/Courier-Management-System/assets/69311703/43c0822b-f065-4e85-a2b2-09156ca7aa1">
+<p>Customer parcel delivery panel</p>
+</div>
+<br>
+
 
 <h3>Admin Panel</h3>
 - Customer handling: Admins can change all the credentials of the customers 
 - Product handling: Admins can change the product delivery state
 - Officials handling: Admins can change the admins and officials information and roles.
+
+4
